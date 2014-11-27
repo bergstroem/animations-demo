@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>web animations</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <main>
+      <section>
+        <h1>Followtrough</h1>
+        <button id="followthrough-button">Animate</button>
+        <div id="followthrough-container">
+          <label>E-mail</label>
+          <input type="text">
+          <label>Password</label>
+          <input type="text">
+          <button id="followthrough" style="width: 100%;">Login</button>
+        </div>
+      </section>
+
+      <section id="staging">
+        <h1>Staging</h1>
+        <button id="staging-button">Animate</button>
+        <nav>
+          <ul id="logged-in">
+            <li><span class="logged-in-button fa fa-mail-reply"></span></li>
+            <li><span class="logged-in-button fa fa-mail-reply-all"></span></li>
+            <li><span class="logged-in-button fa fa-trash"></span></li>
+          </ul>
+          <ul id="logged-out">
+            <li><span class="logged-out-button fa fa-plus"></span></li>
+            <li><span class="logged-out-button fa fa-search"></span></li>
+            <li><span class="logged-out-button fa fa-cog"></span></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section>
+        <h1>Anticipation</h1>
+        <button id="anticipation-button">Animate</button>
+
+        <div id="anticipation">
+          <ul>
+            <li>Start</li>
+            <li>Menu item #1</li>
+            <li>Menu item #2</li>
+            <li>Menu item #3</li>
+            <li>Menu item #4</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h1>Arc</h1>
+        <button id="arc-button">Animate</button>
+        <img class="arc" src="http://placekitten.com/g/200/200">
+        <img class="arc" src="http://placekitten.com/g/200/200">
+        <img class="arc" src="http://placekitten.com/g/200/200">
+        <img class="arc" src="http://placekitten.com/g/200/200">
+      </section>
+
+      <section>
+        <header>
+          <h1>Squash & Stretch</h1>
+          <button id="squash-button">Animate</button>
+        </header>
+        <img id="squash" src="http://placekitten.com/g/200/200">
+      </section>
+
+      <section>
+        <h1>Secondary Action</h1>
+        <button id="secondary-action-button">Animate</button>
+        <article>
+          <div class="big-blob">
+            <img src="http://placekitten.com/g/500/250">
+          </div>
+          <ul>
+            <li>
+              <div class="small-blob">
+                <span class="fa fa-paint-brush"></span>
+              </div>
+            </li>
+            <li>
+              <div class="small-blob">
+                <span class="fa fa-pencil"></span>
+              </div>
+            </li>
+            <li>
+              <div class="small-blob">
+                <span class="fa fa-eraser"></span>
+              </div>
+            </li>
+            <li>
+              <div class="small-blob">
+                <span class="fa fa-rotate-left"></span>
+              </div>
+            </li>
+            <li>
+              <div class="small-blob">
+                <span class="fa fa-rotate-right"></span>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/velocity/velocity.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/staging.js"></script>
+    <script src="scripts/followthrough.js"></script>
+    <script src="scripts/anticipation.js"></script>
+    <script src="scripts/secondary-action.js"></script>
+    <script src="scripts/squash-and-stretch.js"></script>
+    <script src="scripts/arc.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

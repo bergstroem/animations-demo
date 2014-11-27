@@ -1,0 +1,8 @@
+{
+  "name": "web-animations",
+  "private": true,
+  "dependencies": {
+    "velocity": "~1.1.0",
+    "fontawesome": "~4.2.0"
+  }
+}
